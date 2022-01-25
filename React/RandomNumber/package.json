@@ -1,0 +1,11 @@
+{
+  "name": "randomnumber",
+  "version": "1.0.0",
+  "description": "\"Adding Random Number Between 0 to 20\"",
+  "main": "generateRandomNumber.js",
+  "author": "Mayank Gupta",
+  "license": "ISC",
+  "dependencies": {
+    "randomize": "^0.0.4"
+  }
+}
