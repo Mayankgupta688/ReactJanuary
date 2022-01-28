@@ -1,14 +1,12 @@
 import ReactDOM from "react-dom";
 
-import Component from "./components/EmployeeGenericComponent";
+import Component from "./components/TimerComponent";
 
-ReactDOM.render((
-    <div>
-        <Component name="Mayank" id="1" avatar="" createdAt="Today"></Component>
-        <Component name="Ankit" id="2" avatar="" createdAt="Today"></Component>
-        <Component name="Anshul" id="3" avatar="" createdAt="Today"></Component>
-        <Component name="Meha" id="4" avatar="" createdAt="Today"></Component>
-        <Component name="TechnoFunnel" id="5" avatar="" createdAt="Today"></Component>
+setInterval(function() {
+    ReactDOM.render((
+        <div>
+            <Component></Component>
+        </div>
+    ), document.getElementById("root"));
+}, 1000);
 
-    </div>
-), document.getElementById("root"));
