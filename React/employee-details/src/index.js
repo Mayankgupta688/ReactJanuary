@@ -1,12 +1,7 @@
 import ReactDOM from "react-dom";
 
-import Component from "./components/TimerComponent";
+import Component from "./stateComponents/EventComponent";
 
-setInterval(function() {
-    ReactDOM.render((
-        <div>
-            <Component></Component>
-        </div>
-    ), document.getElementById("root"));
-}, 1000);
+ReactDOM.render(<Component></Component>, document.getElementById("root"));
+
 
