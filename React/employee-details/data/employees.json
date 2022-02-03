@@ -1,24 +1,6 @@
 {
   "employees": [
     {
-      "id": "2",
-      "createdAt": "2019-07-10T07:55:42.129Z",
-      "name": "Bernita Fadel",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/darylws/128.jpg"
-    },
-    {
-      "id": "3",
-      "createdAt": "2019-07-10T06:49:45.160Z",
-      "name": "Karlee Klocko",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/donjain/128.jpg"
-    },
-    {
-      "id": "5",
-      "createdAt": "2019-07-10T06:42:06.119Z",
-      "name": "Jailyn Wisoky",
-      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/bassamology/128.jpg"
-    },
-    {
       "id": "6",
       "createdAt": "2019-07-09T16:47:50.882Z",
       "name": "Rozella Barton",
@@ -575,6 +557,12 @@
       "name": "Martha Predovic",
       "avatar": "https://cdn.fakercloud.com/avatars/mr_shiznit_128.jpg",
       "id": "100"
+    },
+    {
+      "name": "TechnoFunnel",
+      "id": 101,
+      "createdAt": "Today",
+      "avatar": "https://st.depsdfsdfsdfositphotos.com/1594308/4626/i/950/depositphotos_46262829-stock-photo-happy-employee.jpg"
     }
   ]
 }

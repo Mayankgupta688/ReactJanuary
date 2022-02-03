@@ -2,8 +2,9 @@ import Axios from "axios";
 import { useState, useEffect } from "react";
 import EmployeeDetails from "./EmployeeDetails";
 
-export default function EmployeeList(props) {
-    debugger;
+import AppContext from "./AppContext";
+
+export default function EmployeeList() {
 
     var [employeeList, setEmployeeList] = useState([]);
 
@@ -26,19 +27,16 @@ export default function EmployeeList(props) {
     }
     
     return (
-        <>
-            <>
-                <>
-                    <h1>The Updated list of employee is given below:</h1>
-                    <>
-                        {employeeList.map((employee) => {
-                            return (
-                                <EmployeeDetails key={employee.id} {...props} {...employee} deleteEmployeeCode={deleteEmployeeCode}></EmployeeDetails>
-                            )
-                        })}
-                    </>
-                </>
-            </>
-        </>
+        <div>
+            <div>
+                {employeeList.map((employee) => {
+                    return (
+                        <AppContext.Provider value={{employee: employee, deleteEmployeeCode: deleteEmployeeCode}}>
+                            <EmployeeDetails></EmployeeDetails>
+                        </AppContext.Provider>
+                    )
+                })}
+            </div>
+        </div>
     )
 }
